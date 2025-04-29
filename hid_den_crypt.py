@@ -55,16 +55,9 @@ def atbash_cipher(text):
 
 # --- QWERTY Keyboard Shift Data (Simple version, ignores edges) ---
 # fmt: off
-"""
-QWERTY_ENCRYPT_MAP = {
-    'q': 'w', 'w': 'e', 'e': 'r', 'r': 't', 't': 'y', 'y': 'u', 'u': 'i', 'i': 'o', 'o': 'p',
-    'a': 's', 's': 'd', 'd': 'f', 'f': 'g', 'g': 'h', 'h': 'j', 'j': 'k', 'k': 'l',
-    'z': 'x', 'x': 'c', 'c': 'v', 'v': 'b', 'b': 'n', 'n': 'm',
-    'Q': 'W', 'W': 'E', 'E': 'R', 'R': 'T', 'T': 'Y', 'Y': 'U', 'U': 'I', 'I': 'O', 'O': 'P',
-    'A': 'S', 'S': 'D', 'D': 'F', 'F': 'G', 'G': 'H', 'H': 'J', 'J': 'K', 'K': 'L',
-    'Z': 'X', 'X': 'C', 'C': 'V', 'V': 'B', 'B': 'N', 'N': 'M',
-}
-"""
+
+# Here was the QWERTY_ENCRYPT_MAP, outsourced to keyboard_maps.py
+
 # Create decrypt map by reversing the encrypt map
 QWERTY_DECRYPT_MAP = {v: k for k, v in QWERTY_ENCRYPT_MAP.items()}
 # fmt: on
